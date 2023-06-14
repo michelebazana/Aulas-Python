@@ -4,5 +4,5 @@
 
 Vamos lá!
 ```
-iniciando...
+aulas iniciadas...
 ```
