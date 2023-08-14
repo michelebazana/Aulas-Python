@@ -7,13 +7,13 @@ for carro, quantidade in venda:
     #carro, quantidade = operacao
     preco = estoque[carro][1]
     custo = preco * quantidade
-    print(f"{carro}: {quantidade} x R${preco},00 = R${custo},00")
+    print(f"{carro}: {quantidade} x R${preco:.2f} = R${custo:.2f}")
     estoque[carro][0] -= quantidade
     total += custo
 
-print(f"\nCusto total = R${total},00\n")
+print(f"\nCusto total = R${total:.2f}\n")
 
 for chave, valores in estoque.items():
-    print("Descrição:",chave)
-    print("Quantidade:",valores[0])
-    print(f"Preço:{valores[1]}\n")
+    print("Descrição:", chave)
+    print("Quantidade:", valores[0])
+    print(f"Preço:R${valores[1]:.2f}\n")
