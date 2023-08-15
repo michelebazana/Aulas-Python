@@ -4,7 +4,6 @@ venda = [["Audi Q3", 1], ["BMW", 2]]
 
 total = 0
 for carro, quantidade in venda:
-    #carro, quantidade = operacao
     preco = estoque[carro][1]
     custo = preco * quantidade
     print(f"{carro}: {quantidade} x R${preco:.2f} = R${custo:.2f}")
