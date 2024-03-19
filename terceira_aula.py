@@ -1,12 +1,12 @@
-# media_final = int(input("Média final = "))
-# if media_final >= 70:
-#     print("Aprovado!")
-# else:
-#     print("Reprovado!")
+'''media_final = int(input("Entre com a sua média final = "))
+if media_final >= 60:
+    print("Aprovado")
+else:
+    print("Reprovado")'''
 
-#exercício 1
-vel = int(input("Entre com a velocidade do carro em km/h = "))
-if vel > 80:
-    print("Você foi multado!")
-    multa = (vel - 80) * 5
-    print(f"O valor da sua multa é R$ {multa:.2f}.")
+velocidade = int(input("Entre com a sua velocidade em km/h = "))
+if velocidade > 80:
+    multa = (velocidade - 80) * 5
+    print(f"Você foi multado e o valor da multa é de R$ {multa:.2f}.")
+else:
+    print("Parabéns você não foi multado!")
