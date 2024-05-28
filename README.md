@@ -30,10 +30,10 @@ A instrução ***break*** também interrompe o ***for***.
 carros_suv = ["Renault Duster Intense", "Citroen C4 Cactus Live", "Peugeot 2008 Allure", "Chery Tiggo 5X T", "Nissan Kicks Sense"]
 carro = input("Digite um carro SUV a pesquisar na lista: ")
 for i in carros_suv:
-  if i == carro:        
-    print("Elemento encontrado!")        
-    break
-else:    
+  if i == carro:
+    print("Elemento encontrado!")
+    break
+else: 
   print("Elemento não encontrado.")
 ```
 
