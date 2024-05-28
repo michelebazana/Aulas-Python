@@ -19,7 +19,7 @@ for i in carros_suv:
   print(i)
 ```  
 
-> Quando começamos a executar o ***for***, temos **i** igual ao primeiro elemento da lista, no caso **Renault Duster Intense**, ou seja, carros_suv[0]. Imprimimos **Renault Duster Intense** e a execução do programa volta para o for e **i** passa a valer **Citroen C4 Cactus Live**, ou seja, carros_suv[1]. Na próxima repetição **i** valerá **Peugeot 2008 Allure**, ou seja carros_suv[2]. Depois de imprimir o último elemento, a repetição é concluída. 
+> Quando começamos a executar o ***for***, temos **i** igual ao primeiro elemento da lista, no caso **Renault Duster Intense**, ou seja, **carros_suv[0]**. Imprimimos **Renault Duster Intense** e a execução do programa volta para o for e **i** passa a valer **Citroen C4 Cactus Live**, ou seja, **carros_suv[1]**. Na próxima repetição **i** valerá **Peugeot 2008 Allure**, ou seja **carros_suv[2]**. Depois de imprimir o último elemento, a repetição é concluída. 
 
 Normalmente utilizamos ***for*** quando quisermos processar elementos de uma lista, um a um. 
 A instrução ***break*** também interrompe o ***for***. 
