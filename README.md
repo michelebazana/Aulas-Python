@@ -14,7 +14,7 @@ A instrução ***for*** funciona de forma parecida com o ***while***, mas a cada
 > Vamos escrever um programa que utilize ***for*** para imprimir todos os elementos de uma lista.
 
 ```
-carros_suv = ["Renegade", "HRV", "Peugeot 2008", ""]
+carros_suv = ["Renegade", "HRV", "Peugeot 2008"]
 for i in carros_suv:
   print(i)
 ```  
