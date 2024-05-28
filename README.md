@@ -69,3 +69,18 @@ Podemos acrescentar um terceiro parâmetro à função ***range***, podemos salt
 for i in range(0, 11, 2):
   print(t)
 ```
+
+Podemos percorrer uma lista de forma a verificar o menor e o maior valor. 
+
+> Vejamos:
+
+```
+notas = [10, 5, 7, 8]
+maximo = notas[0]
+for i in notas:
+  if i > maximo:
+    maximo = i
+print(maximo)
+```
+
+> Utilizamos um truque, inicializando a variável **maximo** com o valor do primeiro elemento da lista. Precisamos de um valor para **maximo** antes de utilizá-lo no comparação com ***if***.
