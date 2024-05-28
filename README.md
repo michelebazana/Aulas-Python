@@ -38,3 +38,34 @@ else:
 ```
 
 Observação: a instrução ***while*** também possui uma cláusula opcional ***else*** que funciona da mesma forma que o ***else*** do ***for***.
+
+Podemos utilizar a função ***range*** para gerar listas simples. A função ***range*** não retorna uma lista propriamente dita, mas um gerador.  
+
+> Vejamos um programa que imprime de 0 a 9 na tela:
+
+```
+for i in range(10):
+  print(i)
+```
+
+> A função ***range*** gerou números de 0 a 9 porque passamos 10 como parâmetro. 
+
+Com a mesma função ***range***, podemos indicar qual é o primeiro número a gerar. 
+
+> Vejamos:
+
+```
+for i in range(5, 8):
+  print(i)
+```
+
+> Usando 5 como início e 8 como fim (não incluso na faixa de valores), vamos imprimi os números 5, 6 e 7.
+
+Podemos acrescentar um terceiro parâmetro à função ***range***, podemos saltar entre os valores gerados. 
+
+> Vejamos um exemplo em que geramos os números pares de 0 e 10:
+
+```
+for i in range(0, 11, 2):
+  print(t)
+```
