@@ -1,27 +1,37 @@
-#Aula sobre dicionário
+# cadastro = {"6342764273": ["Michele", 1978, "São José do Rio Pardo", "SP"],
+#             "8724390750": ["Jennyfer", 2005,"São Paulo", "SP"]}
+# print(cadastro)
+#
+# print(cadastro["6342764273"])
+#
+# cadastro["8724390750"][0] = "Jennifer"
+#
+# print(cadastro["8724390750"])
+#
+# del cadastro["6342764273"]
+#
+# print(cadastro)
+#
+# print("4839573483" in cadastro)
+# print("8724390750" in cadastro)
+#
+# print(cadastro.keys())
+# print(cadastro.values())
 
-carros ={"Jeep Renegade":['R$90.000,00','2018'],
-         "Jeep Compass": ['R$150.000,00','2019'],
-         "Troller": 'R$200.000,00'}
-print(carros)
-print(carros["Jeep Renegade"])
+cadastro = {"6342764273": ["Michele", 1978, "São José do Rio Pardo", "SP"],
+            "8724390750": ["Jennyfer", 2005,"São Paulo", "SP"],
+            "8978973985": ["Amaury", 1994, "Varzelândia", "MG"]}
 
-carros["Jeep Compass"][0] = 'R$180.000,00'
-print(carros)
+for chave, valores in cadastro.items():
+    print("Nome:", valores[0])
+    print("CPF:", chave)
+    print("Ano de nascimento:", valores[1])
+    print(f"Cidade e estado de nascimento: {valores[2]}/{valores[3]}\n")
 
-carros["Jeep Renegade"][1] = "2016"
-print(carros)
-
-del carros["Troller"]
-print(carros)
-
-carros["Audi"] = ['R$250.000,00', "2023"]
-print(carros)
-
-print("Audi" in carros)
-print("BMW" in carros)
-
-print(carros.keys())
-print(carros.values())
-
-
+while True:
+    cpf = input("Digite o CPF ou fim para sair: ").lower()
+    if cpf == "fim":
+        break
+    if cpf in cadastro:
+        print(f"Nome: {cadastro[cpf][0]}")
+    else: print("CPF não encontrado!")
